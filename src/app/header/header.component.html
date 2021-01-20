@@ -1,0 +1,12 @@
+<nav>
+    <div>
+        <p>ProjectX</p>
+        <li>
+            <ul *ngFor="let content of contents">
+              <a href="#" (click)="changeTab($event)" attr.data-name="{{content.data}}" [class.active]="check(content.data)">
+                {{content.view}}
+              </a>
+            </ul>
+        </li>
+    </div>
+</nav>

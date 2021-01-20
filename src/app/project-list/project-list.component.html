@@ -1,0 +1,19 @@
+<h1>Project List</h1>
+<table>
+  <tbody>
+    <tr>
+      <th class="number">No</th>
+      <th class="name">Nama Project </th>
+      <th>Deskripsi </th>
+      <th class="button">&nbsp;</th>
+    </tr>
+    <tr *ngFor="let project of projects">
+      <td>{{project.id}}</td>
+      <td>{{project.nama}}</td>
+      <td>{{project.deskripsi}}</td>
+      <td>
+        <button>Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

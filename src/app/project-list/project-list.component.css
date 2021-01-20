@@ -1,0 +1,29 @@
+table {
+  margin: auto;
+  border-spacing: 0px;
+  width: 960px;
+}
+th, td {
+  padding: 10px;
+}
+th {
+  background-color: gainsboro;
+  font-weight: bold;
+}
+button {
+  background-color: red;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+}
+.number {
+  width: 10px;
+}
+.name {
+  width: 300px;
+}
+.button {
+  width: 50px;
+  padding: 0;
+}

@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "aksantara"
+  "defaultProject": "aksantara",
+  "cli": {
+    "analytics": "62b75382-2cc6-4ac4-85c4-5eaf53c790b1"
+  }
 }
