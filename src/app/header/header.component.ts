@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-header',
@@ -20,11 +21,15 @@ export class HeaderComponent implements OnInit {
       view: 'Contact'
     }
   ]
+
   public activeTab = 'projectList';
 
-  constructor() { }
+  public user:any = []
+
+  constructor(public _userService: UserService) { }
 
   ngOnInit(): void {
+    this.user = this._userService.user;
   }
 
   changeTab(event: Event) {

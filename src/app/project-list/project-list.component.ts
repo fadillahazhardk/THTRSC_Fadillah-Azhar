@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-project-list',
@@ -6,23 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-list.component.css']
 })
 export class ProjectListComponent implements OnInit {
-  public projects = [
-    {
-      id:1,
-      nama: 'Membangun sesuatu yang dibangun',
-      deskripsi: 'Harus bagus pokoknya gan!'
-    },
-    {
-      id:2,
-      nama: 'Membangun sesuatu yang dibangun',
-      deskripsi: 'harus bagus'
-    }
-  ]
+  @Input() projects:any;
 
+  @Output() deleteProject = new EventEmitter();
+
+  public projectId:any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  clickHandle($event: any) {
+    this.projectId = $event.target.parentElement.parentElement.getAttribute('project');
+    this.deleteProject.emit(this.projectId);
+  }
 }

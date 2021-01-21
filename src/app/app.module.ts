@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CreateProjectFormComponent } from './create-project-form/create-project-form.component';
 import { ProjectListComponent } from './project-list/project-list.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProjectListComponent } from './project-list/project-list.component';
     FooterComponent,
     HeaderComponent,
     CreateProjectFormComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

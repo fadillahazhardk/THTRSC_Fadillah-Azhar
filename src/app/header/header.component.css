@@ -7,6 +7,7 @@ div {
     display: flex;
     max-width: 960px;
     margin: auto;
+    align-items: center;
 }
 
 p {
@@ -16,9 +17,9 @@ p {
 }
 
 li {
-    display: flex;  
+    display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -28,4 +29,19 @@ a {
 a.active {
     color: #e6a365;
     border-bottom: 2px solid #e6a365;
+}
+
+.profile {
+  color: white;
+  margin: 0 0 0 auto;
+}
+
+.photo-profile {
+  padding: 26px;
+  margin-right: 12px;
+  background-color: white;
+  border-radius: 100%;
+}
+.user-level{
+  color: tomato;
 }

@@ -1,19 +1,19 @@
 <!-- on:submit|preventDefault={handleSubmit}  -->
-<form class="addPollForm">
+<form class="addPollForm" (submit)="updateProjects($event)">
     <div class="form-field">
-        <label for="question">Question :</label>
-        <input type="text" id="question" [(ngModel)]="pollForm.question" name="question"> <!-- bind:value={pollForm.question} -->
+        <label for="question">Project Name :</label>
+        <input type="text" id="question" [(ngModel)]="pollForm.nama" name="nama"> <!-- bind:value={pollForm.question} -->
         <!-- <div class="error">{error.question}</div> -->
     </div>
     <div class="form-field">
-        <label for="answerA">Answer A :</label>
-        <input type="text" id="answerA" [(ngModel)]="pollForm.answerA" name="answerA"> <!-- bind:value={pollForm.answerA} -->
+        <label for="answerA">Deskripsi :</label>
+        <input type="text" id="answerA" [(ngModel)]="pollForm.deskripsi" name="deskripsi"> <!-- bind:value={pollForm.answerA} -->
         <!-- <div class="error">{error.answerA}</div> -->
     </div>
-    <div class="form-field" >
+    <!-- <div class="form-field" >
         <label for="answerB">Answer B :</label>
         <input type="text" id="answerB" [(ngModel)]="pollForm.answerB" name="answerB"> <!-- bind:value={pollForm.answerB} -->
-        <!-- <div class="error">{error.answerB}</div> -->
-    </div>
-    <Button type="secondary" inverse={false} flat={false}>Add Poll</Button>
+        <!-- <div class="error">{error.answerB}</div>
+    </div> -->
+    <button type="secondary">Add Poll</button>
 </form>

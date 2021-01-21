@@ -1,7 +1,8 @@
+<app-popup></app-popup>
 <app-header></app-header>
 <main>
   <h1>Create Project</h1>
-  <app-create-project-form></app-create-project-form>
-  <app-project-list></app-project-list>
+  <app-create-project-form (addNewProject)="updateProject($event)"></app-create-project-form>
+  <app-project-list [projects]="projectList" (deleteProject)="deleteProject($event)"></app-project-list>
 </main>
 <app-footer></app-footer>

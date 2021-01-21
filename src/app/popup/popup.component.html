@@ -1,0 +1,9 @@
+<div *ngIf="show" class="popup-banner">
+  <div class="popup-content">
+    <div class="popup-text">
+      <h1>Welcome, <span>{{user.name}} !</span></h1>
+      <a href="#">Contact us first before you use this app.</a>
+    </div>
+    <button (click)="clickHandle()">X</button>
+  </div>
+</div>
