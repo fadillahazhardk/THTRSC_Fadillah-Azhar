@@ -9,15 +9,15 @@ import { UserService } from '../user.service';
 export class HeaderComponent implements OnInit {
   public contents = [
     {
-      data: 'projectList',
-      view: 'Project List'
+      param: '',
+      view: 'Project'
     },
     {
-      data: 'createProjectForm',
-      view: 'Create Project'
+      param: 'about',
+      view: 'About'
     },
     {
-      data: 'contact',
+      param: 'contact',
       view: 'Contact'
     }
   ]

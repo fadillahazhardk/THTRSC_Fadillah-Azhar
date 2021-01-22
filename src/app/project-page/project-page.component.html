@@ -1,0 +1,15 @@
+<main>
+    <ul>
+      <li>
+        <a (click)="toForm()" [class.activeMenu]="activeMenu === 'projectForm'">Project List</a>
+      </li>
+      <li>
+        <a (click)="toList()" [class.activeMenu]="activeMenu === 'projectList'">Create Project Form</a>
+      </li>
+    </ul>
+  <app-create-project-form *ngIf="activeMenu === 'projectList'; else elseBlock" (addNewProject)="updateProject($event)"></app-create-project-form>
+  <ng-template #elseBlock>
+    <app-project-list [projects]="projectList" (deleteProject)="deleteProject($event)"></app-project-list>
+  </ng-template>
+</main>
+

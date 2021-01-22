@@ -3,9 +3,7 @@
         <p>ProjectX</p>
         <li>
             <ul *ngFor="let content of contents">
-              <a href="#" (click)="changeTab($event)" attr.data-name="{{content.data}}" [class.active]="check(content.data)">
-                {{content.view}}
-              </a>
+              <a routerLink="/{{content.param}}" routerLinkActive="active">{{content.view | titlecase}}</a>
             </ul>
         </li>
         <div class="profile">
@@ -15,3 +13,4 @@
         </div>
     </div>
 </nav>
+<router-outlet></router-outlet>

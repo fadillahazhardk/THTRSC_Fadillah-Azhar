@@ -9,6 +9,9 @@ import { HeaderComponent } from './header/header.component';
 import { CreateProjectFormComponent } from './create-project-form/create-project-form.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { PopupComponent } from './popup/popup.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { PopupComponent } from './popup/popup.component';
     HeaderComponent,
     CreateProjectFormComponent,
     ProjectListComponent,
-    PopupComponent
+    PopupComponent,
+    ProjectPageComponent,
+    ContactPageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
