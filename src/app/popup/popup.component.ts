@@ -8,6 +8,7 @@ import { UserService } from '../user.service';
 })
 export class PopupComponent implements OnInit {
 
+  //Secara default popup akan muncul
   public show = true;
 
   public user:any = []
@@ -15,9 +16,11 @@ export class PopupComponent implements OnInit {
   constructor(private _userService: UserService) {}
 
   ngOnInit() {
+    //Data user ini diambil dari service
     this.user = this._userService.user
   }
 
+  //Fungsi untuk meng-close popup
   clickHandle() {
     this.show = false;
   }

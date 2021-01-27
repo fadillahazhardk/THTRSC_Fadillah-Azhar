@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Aksantara';
+  public title = 'Aksantara';
 
+  //Array daftar project akan ditampilakan di home page bagian "project list"
+  //Dua object di dalam array project dibawah hanya sebagai starter
   public projectList: Array<any> = [
     {
       id:1,
@@ -20,17 +22,4 @@ export class AppComponent {
       deskripsi: 'harus bagus'
     }
   ]
-
-  updateProject($event: any) {
-    let index = this.projectList.length - 1
-    if (index < 0) {
-      index = 0
-    }
-    this.projectList[index] === undefined ? $event.id = 1 : $event.id = this.projectList[index].id + 1;
-    this.projectList = [...this.projectList, $event]
-  }
-
-  deleteProject($event: any) {
-    this.projectList = this.projectList.filter(project => project.id != $event);
-  }
 }
