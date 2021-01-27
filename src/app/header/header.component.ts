@@ -9,7 +9,7 @@ import { UserService } from '../user.service';
 export class HeaderComponent implements OnInit {
   public contents = [
     {
-      param: '',
+      param: 'home',
       view: 'Project'
     },
     {
@@ -32,13 +32,13 @@ export class HeaderComponent implements OnInit {
     this.user = this._userService.user;
   }
 
-  changeTab(event: Event) {
-    this.activeTab = (event.target as HTMLElement).getAttribute('data-name')!;
-    console.log(this.activeTab);
-  }
+  // changeTab(event: Event) {
+  //   this.activeTab = (event.target as HTMLElement).getAttribute('data-name')!;
+  //   console.log(this.activeTab);
+  // }
 
-  check(data: String) {
-    return data === this.activeTab;
-  }
+  // check(data: String) {
+  //   return data === this.activeTab;
+  // }
 
 }

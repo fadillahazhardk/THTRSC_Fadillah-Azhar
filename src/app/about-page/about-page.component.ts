@@ -12,4 +12,7 @@ export class AboutPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public bannerImage:any = "assets/img/banner/about.jpg"
+  public bannerTitle:any = "Misi kami membantu anda dan tim bekerja lebih efisien."
+  public bannerText:any = "Project tracking terbaik abad ini"
 }

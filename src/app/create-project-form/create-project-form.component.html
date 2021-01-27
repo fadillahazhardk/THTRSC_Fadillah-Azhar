@@ -1,20 +1,13 @@
 <!-- on:submit|preventDefault={handleSubmit}  -->
 <h1>Create Project</h1>
-<form class="addPollForm" (submit)="updateProjects($event)">
+<form (submit)="updateProjects($event)">
     <div class="form-field">
-        <label for="question">Project Name :</label>
-        <input type="text" id="question" [(ngModel)]="pollForm.nama" name="nama"> <!-- bind:value={pollForm.question} -->
-        <!-- <div class="error">{error.question}</div> -->
+        <label for="question">Nama Project :</label>
+        <input type="text" id="question" [(ngModel)]="pollForm.nama" name="nama">
     </div>
     <div class="form-field">
-        <label for="answerA">Deskripsi :</label>
-        <input type="text" id="answerA" [(ngModel)]="pollForm.deskripsi" name="deskripsi"> <!-- bind:value={pollForm.answerA} -->
-        <!-- <div class="error">{error.answerA}</div> -->
+        <label for="deskripsi">Deskripsi Project:</label>
+        <textarea type="text" id="deskripsi" [(ngModel)]="pollForm.deskripsi" name="deskripsi" rows="10"></textarea>
     </div>
-    <!-- <div class="form-field" >
-        <label for="answerB">Answer B :</label>
-        <input type="text" id="answerB" [(ngModel)]="pollForm.answerB" name="answerB"> <!-- bind:value={pollForm.answerB} -->
-        <!-- <div class="error">{error.answerB}</div>
-    </div> -->
-    <button type="secondary">Add Poll</button>
+    <button>Create !</button>
 </form>

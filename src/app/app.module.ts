@@ -12,6 +12,7 @@ import { PopupComponent } from './popup/popup.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutPageComponent } from './about-page/about-page.component';
     PopupComponent,
     ProjectPageComponent,
     ContactPageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

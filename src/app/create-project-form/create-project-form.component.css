@@ -1,0 +1,23 @@
+.form-field {
+  margin: 10px auto;
+  width: 500px;
+}
+.form-field input,textarea {
+  width: 100%;
+}
+.form-field label {
+  text-align: left;
+  margin-bottom: 6px;
+}
+button {
+  padding: 0 20px;
+  border-radius: 6px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  background: #fe4066;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+}

@@ -1,1 +1,23 @@
-<p>contact-page works!</p>
+<main>
+  <app-banner [img]="contactImage" [title]="bannerTitle" [text]="bannerText"></app-banner>
+  <div>
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <div class="form-field">
+          <label for="nama">Name :</label>
+          <input type="text" id="nama" name="nama">
+      </div>
+      <div class="form-field">
+        <label for="email">Email :</label>
+        <input type="text" id="email" name="email">
+      </div>
+      <div class="form-field">
+        <label for="message">Message :</label>
+        <textarea name="message" id="message" rows="10"></textarea>
+      </div>
+      <button>Kirim</button>
+  </form>
+  </div>
+</main>
+
+

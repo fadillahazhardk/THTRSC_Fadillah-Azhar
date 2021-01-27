@@ -13,6 +13,11 @@ export class ProjectPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public bannerImage:any = 'assets/img/banner/home.jpg'
+  public bannerTitle:any = 'Make Tracking Your Project Easier.';
+  public bannerText:any = '';
+  public isHome:any = true;
+
   public activeMenu:any = 'projectList';
 
   public projectList: Array<any> = [
